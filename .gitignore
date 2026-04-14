@@ -1,0 +1,10 @@
+# Virtual environment
+bin/
+lib/
+share/
+pyvenv.cfg
+CACHEDIR.TAG
+.lock
+
+# macOS
+.DS_Store
