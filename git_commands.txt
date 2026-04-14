@@ -1,0 +1,68 @@
+GIT COMMANDS FOR UPDATING THE CODE REPOSITORY
+==============================================
+
+1. CHECK STATUS
+   See which files have changed or are untracked:
+   git status
+
+2. ADD FILES TO STAGING
+   Add a specific file:
+   git add filename.txt
+
+   Add multiple files:
+   git add file1.py file2.ipynb
+
+   Add all changed files at once:
+   git add .
+
+3. COMMIT CHANGES
+   Commit staged files with a message:
+   git commit -m "Your descriptive message here"
+
+4. VIEW COMMIT HISTORY
+   See past commits:
+   git log --oneline
+
+5. CONNECT TO A REMOTE REPOSITORY (e.g., GitHub)
+   Add a remote origin (do this once):
+   git remote add origin https://github.com/your-username/your-repo.git
+
+   Verify remote is set:
+   git remote -v
+
+6. PUSH CHANGES TO REMOTE
+   Push to the main branch:
+   git push origin main
+
+   First-time push (sets upstream tracking):
+   git push -u origin main
+
+7. PULL LATEST CHANGES FROM REMOTE
+   Fetch and merge remote changes into your local branch:
+   git pull origin main
+
+8. TYPICAL WORKFLOW (run in order)
+   git status
+   git add .
+   git commit -m "Describe what changed"
+   git push origin main
+
+9. UNDO / REVERT
+   Unstage a file (before committing):
+   git restore --staged filename.txt
+
+   Discard changes in a file (careful — permanent):
+   git restore filename.txt
+
+   View changes before staging:
+   git diff
+
+10. BRANCHING (optional, for managing features)
+    Create and switch to a new branch:
+    git checkout -b feature-branch-name
+
+    Switch back to main:
+    git checkout main
+
+    Merge a branch into main:
+    git merge feature-branch-name
